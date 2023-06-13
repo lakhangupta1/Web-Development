@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+</head>
+<body>
+    <div class="container">
+        <br/>
+        <h1 class="text-center">NodeMailer Email Sending App </h1>
+        <br/>
+
+        <form autocomplete="off" action="/sendemail" method="POST" enctype="mutipart/form-data">
+            <div class="form-group">
+                <input type="email" name="to" required placeholder="To: " id="" class="form-control"/>
+
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="subject" required placeholder="Subject: " id="" class="form-control"/>
+
+            </div>
+
+            <div class="form-group">
+                <textarea  name="body" required placeholder="Body " id="" class="form-control" cols="30" rows="10"></textarea>
+
+            </div>
+
+            <div class="form-group">
+                <label for="attachement">attachement :</label>
+                <input class="form-control" type="file" name="image"  required  id="" />
+
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-block btn-danger">
+                    Send Message
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"  ></script>
+    
+</body>
+</html>
